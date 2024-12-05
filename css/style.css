@@ -1,0 +1,8 @@
+:root {
+    --header-font: 'gambado-sans', sans-serif;
+    --paragraph-font: 'basic-sans', sans-serif;
+}
+
+h1 {
+    font-family: var(--header-font);
+}
