@@ -1,8 +1,101 @@
 :root {
     --header-font: 'gambado-sans', sans-serif;
     --paragraph-font: 'basic-sans', sans-serif;
+    --primary-color: #C80000;
+    --secondary-color: #031527;
+    --accent-color: #FFFFFF;
 }
 
 h1 {
     font-family: var(--header-font);
+    color: var(--primary-color);
 }
+
+#heroText{
+    font-family: var(--paragraph-font);
+    color: var(--secondary-color);
+}
+
+#heroText button {
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: var(--accent-color); /* White fill inside the button */
+    color: var(--secondary-color);  /* Blue text */
+    border: 2px solid var(--primary-color);  /* Red outline */
+    outline: 3px solid var(--primary-color); /* Red outline */
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s;
+    border-radius:30px; /* Rounded corners */
+}
+
+#types {
+    display:flex;
+    flex-wrap: wrap;
+}
+
+#types button {
+    color: var(--accent-color);
+    width: 6rem;
+    height: 6rem;
+    border-radius: 100%;
+    margin: 1rem;
+    cursor: pointer;
+}
+
+#b1 {
+    background-color: #A8A77A;
+}
+
+#b2 {
+    background-color: #EE8130;
+}
+
+#b3 {
+    background-color: #6390F0;
+}
+#b4 {
+    background-color: #F7D02C;
+}
+#b5 {
+    background-color: #7AC74C;
+}
+#b6 {
+    background-color: #96D9D6;
+}
+#b7 {
+    background-color: 	#C22E28;
+}
+#b8 {
+    background-color: 	#A33EA1;
+}
+#b9 {
+    background-color: #E2BF65;
+}
+#b10 {
+    background-color: #A98FF3;
+}
+#b11 {
+    background-color: #F95587;
+}
+#b12 {
+    background-color: #A6B91A;
+}
+#b13 {
+    background-color: #B6A136;
+}
+#b14 {
+    background-color: #735797;
+}
+#b15 {
+    background-color: #6F35FC;
+}
+#b16 {
+    background-color: #705746;
+}
+#b17 {
+    background-color: #B7B7CE;
+}
+#b18 {
+    background-color: 	#D685AD;
+}
+
