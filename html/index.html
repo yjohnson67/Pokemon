@@ -6,6 +6,7 @@
     <title>Home</title>
     <link rel="stylesheet" href="https://use.typekit.net/zmh7hhh.css">
     <link rel="stylesheet" href="../css/style.css">
+    <script src="../js/searchByType.js"></script>
 </head>
 <body>
     <header>
@@ -17,28 +18,33 @@
 
             Feeling curious? Want to learn more about different Pokémon types? Select a type from the list and dive into the unique world of Fire, Water, Grass, Electric, and more. </p>
 
-            <button>SEARCH</button>
+            <div id="searchBar">
+                <input type="text" id="pokemonSearch" placeholder="Search Pokemon" required>
+                <button>SEARCH</button>
+            </div>
         </div>
 
         <div id="types">
-            <button id="b1">Normal</button>
-            <button id="b2">Fire</button>
-            <button id="b3">water</button>
-            <button id="b4">Electric</button>
-            <button id="b5">Grass</button>
-            <button id="b6">Ice</button>
-            <button id="b7">Fighting</button>
-            <button id="b8">Poison</button>
-            <button id="b9">Ground</button>
-            <button id="b10">Flying</button>
-            <button id="b11">Psychic</button>
-            <button id="b12">Bug</button>
-            <button id="b13">Rock</button>
-            <button id="b14">Ghost</button>
-            <button id="b15">Dragon</button>
-            <button id="b16">Dark</button>
-            <button id="b17">Steel</button>
-            <button id="b18">Fairy</button>
+            <button id="b1" onclick="fetchPokemonByType(1)">Normal</button>
+            <button id="b2" onclick="fetchPokemonByType(10)">Fire</button>
+            <button id="b3" onclick="fetchPokemonByType(11)">Water</button>
+            <button id="b4" onclick="fetchPokemonByType(13)">Electric</button>
+            <button id="b5" onclick="fetchPokemonByType(12)">Grass</button>
+            <button id="b6" onclick="fetchPokemonByType(15)">Ice</button>
+            <button id="b7" onclick="fetchPokemonByType(2)">Fighting</button>
+            <button id="b8" onclick="fetchPokemonByType(4)">Poison</button>
+            <button id="b9" onclick="fetchPokemonByType(5)">Ground</button>
+            <button id="b10" onclick="fetchPokemonByType(3)">Flying</button>
+            <button id="b11" onclick="fetchPokemonByType(14)">Psychic</button>
+            <button id="b12" onclick="fetchPokemonByType(7)">Bug</button>
+            <button id="b13" onclick="fetchPokemonByType(6)">Rock</button>
+            <button id="b14" onclick="fetchPokemonByType(8)">Ghost</button>
+            <button id="b15" onclick="fetchPokemonByType(16)">Dragon</button>
+            <button id="b16" onclick="fetchPokemonByType(17)">Dark</button>
+            <button id="b17" onclick="fetchPokemonByType(9)">Steel</button>
+            <button id="b18" onclick="fetchPokemonByType(18)">Fairy</button>
+            <button id="b19" onclick="fetchPokemonByType(19)">Stellar</button>
+            <button id="b20" onclick="fetchPokemonByType(10001)">Unknown</button>
         </div>
         <div id="cards"></div>
     </main>
