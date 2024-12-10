@@ -15,9 +15,13 @@ h1, h2 {
     color: var(--primary-color);
 }
 
-p {
+p, ul {
     font-family: var(--paragraph-font);
     color: var(--secondary-color);  
+}
+ 
+#siteTitle {
+    cursor: pointer;
 }
 
 #searchBar button,
@@ -112,6 +116,37 @@ p {
 }
 #b20 {
     background-color: #4B4E6D;
+}
+
+/* Filter Results */
+a.pokemon-name {
+    text-decoration: none;
+    color: inherit;
+}
+ 
+/* When the Pokémon name is viewed, change its color to red */
+a.pokemon-name.viewed {
+    color: var(--primary-color);
+}
+ 
+/* Optional: You can style the link when hovered, if needed */
+a.pokemon-name:hover {
+    color: blue;  /* Change to any color on hover */
+    text-decoration: underline;
+}
+ 
+/* Details */
+#specs {
+    display: flex;
+    justify-content: space-evenly;
+}
+ 
+#specs img {
+    width: 8rem;
+}
+ 
+footer {
+    margin-top: 2rem;
 }
 
 footer {

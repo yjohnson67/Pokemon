@@ -20,13 +20,34 @@ async function fetchPokemonByType(typeId) {
        const pokemonNamesDiv = document.getElementById('pokemonNames');
        pokemonNames.forEach((name) => {
            const nameElement = document.createElement('p');
-           nameElement.textContent = name;
-           nameElement.style.margin = "5px";
-           pokemonNamesDiv.appendChild(nameElement);
-       });
-   } catch (error) {
-       console.error('Error fetching Pokémon:', error);
-       const pokemonListDiv = document.getElementById('cards');
-       pokemonListDiv.innerHTML = '<p>Failed to load Pokémon data. Please try again later.</p>';
-   }
+
+  // Create a clickable link for each Pokémon name
+  const link = document.createElement('a');
+  link.href = `details.html?name=${name}`;  // Redirect to the details page
+  link.textContent = name;
+  link.classList.add('pokemon-name');  // Add class to style as text
+  link.style.margin = "5px";
+  link.style.cursor = "pointer";  // Change cursor to pointer to indicate it's clickable
+
+  // Check if this Pokémon has been viewed before
+  if (localStorage.getItem(name)) {
+      link.classList.add('viewed');  // Add the 'viewed' class if it has been clicked before
+  }
+
+  // Add click event listener to mark as viewed
+  link.addEventListener('click', () => {
+      localStorage.setItem(name, 'viewed');  // Store in localStorage when clicked
+      link.classList.add('viewed');  // Add 'viewed' class immediately
+  });
+
+  // Append the link to the nameElement and then to the list
+  nameElement.appendChild(link);
+  pokemonNamesDiv.appendChild(nameElement);
+});
+
+} catch (error) {
+console.error('Error fetching Pokémon:', error);
+const pokemonListDiv = document.getElementById('cards');
+pokemonListDiv.innerHTML = '<p>Failed to load Pokémon data. Please try again later.</p>';
+}
 }
