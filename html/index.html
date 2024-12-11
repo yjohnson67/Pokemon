@@ -12,17 +12,32 @@
         <h1>PokeLibrary</h1>
     </header>
     <main>
-        <div id="heroText">
-            <p>Looking for your favorite Pokémon? Simply type its name in the search bar, and let the magic unfold! From Pikachu to Charizard, we've got all your favorites ready for you to explore.<br>
+        <div id="container">
+            <div id="parallaxImages">
+                <div class="parallax-item" data-depth="0.7">
+                    <img src="../img/pokemonParallaxBottom.png">
+                </div>
+                <div class="parallax-item" data-depth="0.4">
+                    <img src="../img/pokemonParallaxMiddle.png">
+                </div>
+                <div class="parallax-item" data-depth="0.1">
+                    <img src="../img/pokemonParallaxTop.png">
+                </div>
+            </div>
  
-            Feeling curious? Want to learn more about different Pokémon types? Select a type from the list and dive into the unique world of Fire, Water, Grass, Electric, and more. </p>
- 
-            <div id="searchBar">
-                <input type="text" id="pokemonSearch" placeholder="Search Pokemon" required>
-                <button id="searchButton">SEARCH</button>
+            <div id="heroText">
+                <p>Looking for your favorite Pokémon? Simply type its name in the search bar, and let the magic unfold! From Pikachu to Charizard, we've got all your favorites ready for you to explore.<br>
+   
+                Feeling curious? Want to learn more about different Pokémon types? Select a type from the list and dive into the unique world of Fire, Water, Grass, Electric, and more. </p>
+   
+                <div id="searchBar">
+                    <input type="text" id="pokemonSearch" placeholder="Search Pokemon" required>
+                    <button id="searchButton">SEARCH</button>
+                </div>
             </div>
         </div>
  
+        <h2 id="typeSectionHeader">Search By Type:</h2>
         <div id="types">
             <button id="b1" onclick="fetchPokemonByType(1)">Normal</button>
             <button id="b2" onclick="fetchPokemonByType(10)">Fire</button>
@@ -51,5 +66,6 @@
  
     <script src="../js/searchByType.js"></script>
     <script src="../js/script.js"></script>
+    <script src="../js/parallax.js"></script>
 </body>
 </html>
