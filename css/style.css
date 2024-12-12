@@ -52,6 +52,7 @@ p, ul {
 #types {
     display:flex;
     flex-wrap: wrap;
+    background-color: rgb(192, 189, 189);
 }
 
 #types button {
@@ -61,6 +62,10 @@ p, ul {
     border-radius: 100%;
     margin: 1rem;
     cursor: pointer;
+    font-weight: bold;
+    text-shadow: 2px 2px 4px #3a3c53;
+    text-transform: uppercase;
+    box-shadow: 3px 5px #3a3c53;
 }
 
 #b1 {
