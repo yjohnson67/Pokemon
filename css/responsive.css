@@ -1,3 +1,45 @@
 @media (max-width: 1600px) {
     
 }
+
+@media (max-width: 1440px) {
+
+}
+
+@media (max-width: 1366) {
+
+}
+
+@media (max-width: 1280) {
+
+}
+
+@media (max-width: 1024) {
+
+}
+
+@media (max-width: 820) {
+
+}
+
+@media (max-width: 768) {
+    
+}
+
+@media (max-width: 430) {
+
+}
+
+@media (max-width: 393) {
+
+}
+
+@media (max-width: 375) {
+    #heroText {
+        width: 90%;
+        margin: 0;
+        padding: 10px;
+        border: 2px solid red;
+        text-align: right;
+    }
+}

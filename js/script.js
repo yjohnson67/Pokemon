@@ -27,3 +27,17 @@ document.addEventListener("DOMContentLoaded", function() {
         });
     });
 });
+
+// Light and Dark Mode Toggle
+const toggleButton = document.getElementById("toggleMode");
+const toggleIcon = document.getElementById("toggleIcon");
+const body = document.body;
+
+const moonImage = "..img/crescent-moon.png";
+const sunImage = ".. img/sun.png"
+
+toggleButton.addEventListener("click", () => {
+    body.classList.toggle("dark-mode");
+    toggleIcon.src = body.classList.contains("dark-mode") ? sunImage : moonImage;
+    toggleIcon.alt = body.classList.contains("dark-mode") ? "Sun Icon" : "Moon Icon";
+});
