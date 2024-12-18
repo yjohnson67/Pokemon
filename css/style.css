@@ -269,6 +269,10 @@ footer {
         width: 4.5rem;
         height: 4.5rem;
     }
+
+    #specs {
+        flex-direction: column;
+    }
 }
 
 
@@ -286,6 +290,12 @@ footer {
     #types button {
         width: 4rem;
         height: 4rem;
+        font-size: 0.7rem;
+        text-align: center;
+    }
+
+    #specs {
+        flex-direction: column;
     }
 }
 
@@ -308,5 +318,11 @@ footer {
     #types button {
         width: 4rem;
         height: 4rem;
+        font-size: 0.6rem;
+        text-align: center;
+    }
+
+    #specs {
+        flex-direction: column;
     }
 }
